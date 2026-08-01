@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thallapally Vashista — Software Engineer</title>
+  <meta name="description" content="Thallapally Vashista — Software Engineer & aspiring AI Engineer. Full-stack developer skilled in Java, Spring Boot, React.js, and transitioning into Python, ML and LLM systems."/>
+  <meta name="theme-color" content="#0b0d10"/>
+  <meta property="og:title" content="Thallapally Vashista — Software Engineer"/>
+  <meta property="og:description" content="Full-stack Software Engineer building toward AI Engineering. Java, Spring Boot, React.js, and a growing ML/LLM skillset."/>
+  <meta property="og:type" content="website"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Syne:wght@600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-outline" id="cursorOutline"></div>
+
+<!-- Loader -->
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <div class="loader-text"><span>&lt;</span>VT<span>/&gt;</span></div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+</div>
+
+<!-- ======= NAVBAR ======= -->
+<nav class="navbar" id="navbar">
+  <a href="#home" class="nav-logo">VASHISTA<span class="nav-logo-badge"><i class="fas fa-bolt"></i></span></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#ai-journey">AI Journey</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#profiles">Profiles</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <a href="#contact" class="btn btn-sm magnetic">Hire Me</a>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#about" class="mob-link">About</a></li>
+    <li><a href="#skills" class="mob-link">Skills</a></li>
+    <li><a href="#ai-journey" class="mob-link">AI Journey</a></li>
+    <li><a href="#projects" class="mob-link">Projects</a></li>
+    <li><a href="#profiles" class="mob-link">Profiles</a></li>
+    <li><a href="#contact" class="mob-link">Contact</a></li>
+  </ul>
+</div>
+
+<!-- ======= HERO ======= -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="hero-mesh"></div>
+    <div class="grid-lines"></div>
+    <div class="glowing-orb orb1"></div>
+    <div class="glowing-orb orb2"></div>
+    <div class="glowing-orb orb3"></div>
+    <div class="hero-spotlight" id="heroSpotlight"></div>
+    <div class="floating-shapes" aria-hidden="true">
+      <span class="f-shape shape-ring s1"></span>
+      <span class="f-shape shape-plus s2">+</span>
+      <span class="f-shape shape-dot s3"></span>
+      <span class="f-shape shape-tri s4"></span>
+      <span class="f-shape shape-dot s5"></span>
+      <span class="f-shape shape-brace s6">{ }</span>
+      <span class="f-shape shape-ring s7"></span>
+      <span class="f-shape shape-dot s8"></span>
+    </div>
+  </div>
+
+  <div class="hero-inner">
+  <div class="hero-content">
+    <p class="hero-kicker reveal-up">Hi, I'm</p>
+
+    <h1 class="hero-name reveal-up" id="heroName">
+      <span class="line" data-split>Thallapally <span class="accent-text">Vashista</span></span>
+    </h1>
+
+    <div class="hero-role reveal-up">
+      <span class="role-prefix">&lt;</span>
+      <span class="typed-text" id="typedText"></span>
+      <span class="cursor-blink">|</span>
+      <span class="role-prefix role-suffix">/&gt;</span>
+    </div>
+
+    <p class="hero-tagline reveal-up">
+      I build <em>efficient</em> and <em>scalable</em> solutions that make an impact — turning ideas into real, working products.
+    </p>
+
+    <div class="hero-cta reveal-up">
+      <a href="#projects" class="btn btn-primary magnetic">
+        <span>View Projects</span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+      <a href="#contact" class="btn btn-outline magnetic">
+        <span>Contact Me</span>
+      </a>
+    </div>
+
+    <div class="hero-social reveal-up">
+      <a href="https://github.com/vashistathallapally476cmd" target="_blank" class="hero-social-btn" aria-label="GitHub" data-tip="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://leetcode.com/u/vashistathallapally476/" target="_blank" class="hero-social-btn" aria-label="LeetCode" data-tip="LeetCode">
+        <i class="fas fa-code"></i>
+      </a>
+      <a href="https://www.codechef.com/users/vashistat" target="_blank" class="hero-social-btn" aria-label="CodeChef" data-tip="CodeChef">
+        <i class="fas fa-utensils"></i>
+      </a>
+      <a href="mailto:vashistathallapally476@gmail.com" class="hero-social-btn" aria-label="Email" data-tip="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <span class="hero-social-divider"></span>
+      <a href="Resume_Thallapally_Vashista.pdf" download class="hero-social-btn hero-resume-btn" aria-label="Download Resume" data-tip="Resume">
+        <i class="fas fa-arrow-down-long"></i>
+      </a>
+    </div>
+
+    <div class="hero-stats reveal-up">
+      <div class="stat">
+        <span class="stat-num accent-num counter" data-target="178">0</span>
+        <span class="stat-label">LeetCode Solved</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num accent-num counter" data-target="3">0</span>
+        <span class="stat-label">Full-Stack Projects</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num accent-num">9.32</span>
+        <span class="stat-label">CGPA</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-photo-wrap reveal-right" id="heroPhotoWrap">
+    <div class="photo-frame" id="photoFrame">
+      <div class="photo-ring ring1"></div>
+      <div class="photo-ring ring2"></div>
+      <div class="photo-orbit-dot dot1"></div>
+      <div class="photo-orbit-dot dot2"></div>
+      <img src="photos/Vashista-hero.jpg" alt="Vashista" class="hero-photo" />
+      <div class="photo-glow"></div>
+      <div class="photo-scanline"></div>
+      <div class="corner-dot tl"></div>
+      <div class="corner-dot tr"></div>
+      <div class="corner-dot bl"></div>
+      <div class="corner-dot br"></div>
+      <div class="status-chip"><span class="status-dot"></span>Open to Work</div>
+    </div>
+    <div class="floating-tag tag1"><i class="fab fa-java"></i> Java</div>
+    <div class="floating-tag tag2"><i class="fas fa-leaf"></i> Spring Boot</div>
+    <div class="floating-tag tag3"><i class="fab fa-react"></i> React.js</div>
+    <div class="floating-tag tag4"><i class="fas fa-database"></i> MongoDB</div>
+  </div>
+  </div>
+
+  <a href="#about" class="scroll-indicator">
+    <span class="scroll-text">Scroll to Explore</span>
+    <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+  </a>
+</section>
+
+<!-- ======= ABOUT ======= -->
+<section class="about section" id="about">
+  <div class="about-bg">
+    <div class="about-blob blob1"></div>
+    <div class="about-blob blob2"></div>
+    <div class="about-dotgrid"></div>
+  </div>
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">01 / About</span>
+      <h2 class="section-title">The Story So Far</h2>
+      <p class="section-sub">From curiosity to code.</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="story-col">
+        <div class="story-line"></div>
+        <div class="story-chapter reveal-scroll" style="--d:0s">
+          <div class="chapter-mark"><span>01</span></div>
+          <div class="chapter-body">
+            <span class="chapter-tag">Origin</span>
+            <h3>Where it began</h3>
+            <p>CS undergrad at <strong>GRIET, Hyderabad</strong>. Hooked the moment code turned into something people could actually use.</p>
+          </div>
+        </div>
+
+        <div class="story-chapter reveal-scroll" style="--d:0.1s">
+          <div class="chapter-mark"><span>02</span></div>
+          <div class="chapter-body">
+            <span class="chapter-tag">Craft</span>
+            <h3>Full-stack, end to end</h3>
+            <p><strong>Java & Spring Boot</strong> on the backend, <strong>React.js</strong> up front. APIs, databases, UI — I build the whole thing.</p>
+          </div>
+        </div>
+
+        <div class="story-chapter reveal-scroll" style="--d:0.2s">
+          <div class="chapter-mark"><span>03</span></div>
+          <div class="chapter-body">
+            <span class="chapter-tag">Discipline</span>
+            <h3>Sharpened daily</h3>
+            <p><strong>178+ problems solved on LeetCode.</strong> DSA and algorithmic thinking, practiced every day.</p>
+          </div>
+        </div>
+
+        <div class="story-chapter reveal-scroll" style="--d:0.3s">
+          <div class="chapter-mark"><span>04</span></div>
+          <div class="chapter-body">
+            <span class="chapter-tag">What's Next</span>
+            <h3>Full-stack → AI Engineering</h3>
+            <p>Currently learning <strong>Python, ML and LLM systems</strong> — same rigor, aimed at building smarter products.</p>
+          </div>
+        </div>
+
+        <div class="about-badges reveal-scroll" style="--d:0.4s">
+          <span class="badge"><i class="fas fa-code"></i> DSA Enthusiast</span>
+          <span class="badge"><i class="fas fa-server"></i> Backend Dev</span>
+          <span class="badge"><i class="fas fa-palette"></i> UI Builder</span>
+          <span class="badge"><i class="fas fa-brain"></i> AI Explorer</span>
+        </div>
+      </div>
+
+      <div class="side-col">
+        <div class="about-stats reveal-scroll" style="--d:0.15s">
+          <div class="astat">
+            <span class="astat-num counter" data-target="9.32" data-decimal="true">0</span>
+            <span class="astat-label">CGPA</span>
+          </div>
+          <div class="astat">
+            <span class="astat-num counter" data-target="178">0</span>
+            <span class="astat-label">DSA Problems</span>
+          </div>
+          <div class="astat">
+            <span class="astat-num counter" data-target="3">0</span>
+            <span class="astat-label">Projects Shipped</span>
+          </div>
+          <div class="astat">
+            <span class="astat-num counter" data-target="2">0</span>
+            <span class="astat-label">Years Building</span>
+          </div>
+        </div>
+
+        <div class="education-timeline reveal-scroll" style="--d:0.25s">
+          <h3 class="timeline-title">Education</h3>
+          <div class="timeline">
+            <div class="timeline-item active">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2024 – 2028</span>
+                <h4>B.Tech — Computer Science & Engineering</h4>
+                <p>Gokaraju Rangaraju Institute of Engineering & Technology</p>
+                <span class="timeline-grade">CGPA: 9.32</span>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2022 – 2024</span>
+                <h4>Intermediate (MPC)</h4>
+                <p>Sri Chaitanya Junior College</p>
+                <span class="timeline-grade">Score: 95.1%</span>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">Schooling</span>
+                <h4>SSC</h4>
+                <p>Holy Cross High School</p>
+                <span class="timeline-grade">GPA: 10.0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= SKILLS ======= -->
+<section class="skills section" id="skills">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">02 / Skills</span>
+      <h2 class="section-title">Tech Arsenal</h2>
+      <p class="section-sub">Hover any technology for experience level and how I've used it.</p>
+    </div>
+    <div class="skills-grid">
+      <!-- Languages -->
+      <div class="skill-card" data-delay="0">
+        <div class="skill-card-header">
+          <i class="fas fa-code skill-card-icon"></i>
+          <h3>Languages</h3>
+        </div>
+        <div class="skill-tiles">
+          <div class="skill-tile">
+            <div class="tile-icon-badge"><img class="tile-icon" src="icons/java-original.svg" alt="Java" loading="lazy"></div>
+            <span class="tile-name">Java</span>
+            <div class="tile-tip">
+              <strong>Java</strong><span class="tt-level">Advanced</span>
+              <p>Primary language — backend systems, OOP, DSA practice.</p>
+              <span class="tt-proj">Medicine Finder · SmartBudget · Trading Sim</span>
+            </div>
+          </div>
+          <div class="skill-tile">
+            <div class="tile-icon-badge"><img class="tile-icon" src="icons/c-original.svg" alt="C" loading="lazy"></div>
+            <span class="tile-name">C</span>
+            <div class="tile-tip">
+              <strong>C</strong><span class="tt-level">Intermediate</span>
+              <p>Foundational language — memory, pointers, core CS concepts.</p>
+              <span class="tt-proj">Coursework & DSA fundamentals</span>
+            </div>
+          </div>
+          <div class="skill-tile">
+            <div class="tile-icon-badge"><img class="tile-icon" src="icons/javascript-original.svg" alt="JavaScript" loading="lazy"></div>
+            <span class="tile-name">JavaScript</span>
+            <div class="tile-tip">
+              <strong>JavaScript</strong><span class="tt-level">Advanced</span>
+              <p>DOM, async, and interactive UI logic across every project.</p>
+              <span class="tt-proj">SmartBudget · This Portfolio</span>
+            </div>
+          </div>
+          <div class="skill-tile learning">
+            <div class="tile-icon-badge"><img class="tile-icon" src="icons/python-original.svg" alt="Python" loading="lazy"></div>
+            <span class="tile-name">Python</span>
+            <div class="tile-tip">
+              <strong>Python</strong><span class="tt-level learning-tag">Learning</span>
+              <p>Currently building ML/AI fundamentals with Python.</p>
+              <span class="tt-proj">AI Learning Journey</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Frontend -->
+      <div class="skill-card" data-delay="100">
+        <div class="skill-card-header">
+          <i class="fas fa-layer-group skill-card-icon"></i>
+          <h3>Frontend</h3>
+        </div>
+        <div class="skill-tiles">
+          <div class="skill-tile">
+            <div class="tile-icon-badge"><img class="tile-icon" src="icons/react-original.svg" alt="React.js" loading="lazy"></div>
+            <span class="tile-name">React.js</span>
+            <div class="tile-tip">
+              <strong>React.js</strong><span class="tt-level">Advanced</span>
+              <p>Component-driven UIs, hooks, and state management.</p>
+              <span class="tt-proj">Medicine Finder · Trading Sim</span>
+            </div>
+          </div>
+          <div class="skill-tile">
+            <div class="tile-icon-badge"><img class="tile-icon" src="icons/html5-original.svg" alt="HTML5" loading="lazy"></div>
+            <span class="tile-name">HTML5</span>
+            <div class="tile-tip">
+              <strong>HTML5</strong><span class="tt-level">Advanced</span>
+              <p>Semantic, accessible markup for every project.</p>
+              <span class="tt-proj">All Projects</span>
+            </div>
+          </div>
+          <div class="skill-tile">
+            <div class="tile-icon-badge"><img class="tile-icon" src="icons/css3-original.svg" alt="CSS3" loading="lazy"></div>
+            <span class="tile-name">CSS3</span>
+            <div class="tile-tip">
+              <strong>CSS3</strong><span class="tt-level">Advanced</span>
+              <p>Responsive layouts, animations, custom design systems.</p>
+              <span class="tt-proj">This Portfolio · SmartBudget</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Backend -->
+      <div class="skill-card" data-delay="200">
+        <div class="skill-card-header">
+          <i class="fas fa-server skill-card-icon"></i>
+          <h3>Backend</h3>
+        </div>
+        <div class="skill-tiles">
+          <div class="skill-tile">
+            <div class="tile-icon-badge"><img class="tile-icon" src="icons/spring-original.svg" alt="Spring Boot" loading="lazy"></div>
+            <span class="tile-name">Spring Boot</span>
+            <div class="tile-tip">
+              <strong>Spring Boot</strong><span class="tt-level">Advanced</span>
+              <p>REST APIs, security, and service-layer architecture.</p>
+              <span class="tt-proj">Medicine Finder · SmartBudget</span>
+            </div>
+          </div>
+          <div class="skill-tile">
+            <div class="tile-icon-badge"><i class="fas fa-plug tile-icon-fa"></i></div>
+            <span class="tile-name">REST APIs</span>
+            <div class="tile-tip">
+              <strong>REST APIs</strong><span class="tt-level">Advanced</span>
+              <p>Designing clean, resource-oriented backend endpoints.</p>
+              <span class="tt-proj">All 3 Full-Stack Projects</span>
+            </div>
+          </div>
+          <div class="skill-tile">
+            <div class="tile-icon-badge"><img class="tile-icon" src="icons/hibernate-original.svg" alt="Hibernate / JPA" loading="lazy"></div>
+            <span class="tile-name">Hibernate / JPA</span>
+            <div class="tile-tip">
+              <strong>Hibernate / JPA</strong><span class="tt-level">Intermediate</span>
+              <p>ORM mapping and query optimization.</p>
+              <span class="tt-proj">Online Trading System</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Databases -->
+      <div class="skill-card" data-delay="300">
+        <div class="skill-card-header">
+          <i class="fas fa-database skill-card-icon"></i>
+          <h3>Databases</h3>
+        </div>
+        <div class="skill-tiles">
+          <div class="skill-tile">
+            <div class="tile-icon-badge"><img class="tile-icon" src="icons/postgresql-original.svg" alt="PostgreSQL" loading="lazy"></div>
+            <span class="tile-name">PostgreSQL</span>
+            <div class="tile-tip">
+              <strong>PostgreSQL</strong><span class="tt-level">Intermediate</span>
+              <p>Relational schemas, joins, subqueries, indexing.</p>
+              <span class="tt-proj">Online Trading System</span>
+            </div>
+          </div>
+          <div class="skill-tile">
+            <div class="tile-icon-badge"><img class="tile-icon" src="icons/mongodb-original.svg" alt="MongoDB" loading="lazy"></div>
+            <span class="tile-name">MongoDB</span>
+            <div class="tile-tip">
+              <strong>MongoDB</strong><span class="tt-level">Intermediate</span>
+              <p>Document modeling for location-based data.</p>
+              <span class="tt-proj">Medicine Finder</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Developer Tools -->
+      <div class="skill-card" data-delay="400">
+        <div class="skill-card-header">
+          <i class="fas fa-tools skill-card-icon"></i>
+          <h3>Developer Tools</h3>
+        </div>
+        <div class="skill-tiles">
+          <div class="skill-tile">
+            <div class="tile-icon-badge"><img class="tile-icon" src="icons/git-original.svg" alt="Git" loading="lazy"></div>
+            <span class="tile-name">Git</span>
+            <div class="tile-tip"><strong>Git</strong><span class="tt-level">Advanced</span><p>Version control for every project I ship.</p></div>
+          </div>
+          <div class="skill-tile">
+            <div class="tile-icon-badge"><img class="tile-icon" src="icons/github-original.svg" alt="GitHub" loading="lazy"></div>
+            <span class="tile-name">GitHub</span>
+            <div class="tile-tip"><strong>GitHub</strong><span class="tt-level">Advanced</span><p>Repos, issues, and collaboration workflow.</p></div>
+          </div>
+          <div class="skill-tile">
+            <div class="tile-icon-badge"><img class="tile-icon" src="icons/vscode-original.svg" alt="VS Code" loading="lazy"></div>
+            <span class="tile-name">VS Code</span>
+            <div class="tile-tip"><strong>VS Code</strong><span class="tt-level">Advanced</span><p>Daily driver IDE with a tuned extension setup.</p></div>
+          </div>
+          <div class="skill-tile">
+            <div class="tile-icon-badge"><img class="tile-icon" src="icons/postman-original.svg" alt="Postman" loading="lazy"></div>
+            <span class="tile-name">Postman</span>
+            <div class="tile-tip"><strong>Postman</strong><span class="tt-level">Advanced</span><p>API testing and documentation for every backend.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cloud / Hosting -->
+      <div class="skill-card" data-delay="500">
+        <div class="skill-card-header">
+          <i class="fas fa-cloud skill-card-icon"></i>
+          <h3>Cloud & Hosting</h3>
+        </div>
+        <div class="skill-tiles">
+          <div class="skill-tile">
+            <div class="tile-icon-badge"><img class="tile-icon" src="icons/vercel-original.svg" alt="Vercel" loading="lazy"></div>
+            <span class="tile-name">Vercel</span>
+            <div class="tile-tip"><strong>Vercel</strong><span class="tt-level">Intermediate</span><p>Frontend deployment with CI on every push.</p></div>
+          </div>
+          <div class="skill-tile">
+            <div class="tile-icon-badge"><img class="tile-icon" src="icons/netlify-original.svg" alt="Netlify" loading="lazy"></div>
+            <span class="tile-name">Netlify</span>
+            <div class="tile-tip"><strong>Netlify</strong><span class="tt-level">Intermediate</span><p>Static hosting for lightweight projects.</p></div>
+          </div>
+          <div class="skill-tile">
+            <div class="tile-icon-badge"><img class="tile-icon" src="icons/github-original.svg" alt="GitHub Pages" loading="lazy"></div>
+            <span class="tile-name">GitHub Pages</span>
+            <div class="tile-tip"><strong>GitHub Pages</strong><span class="tt-level">Intermediate</span><p>Free hosting for portfolio & demos.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI / ML — Currently Learning -->
+      <div class="skill-card ai-card" data-delay="600">
+        <div class="skill-card-header">
+          <i class="fas fa-brain skill-card-icon"></i>
+          <h3>AI / ML <span class="learning-badge">Currently Learning</span></h3>
+        </div>
+        <div class="skill-tiles">
+          <div class="skill-tile learning">
+            <div class="tile-icon-badge"><img class="tile-icon" src="icons/python-original.svg" alt="Python" loading="lazy"></div>
+            <span class="tile-name">Python</span>
+            <div class="tile-tip"><strong>Python</strong><span class="tt-level learning-tag">Learning</span><p>Base language for the ML/AI track.</p></div>
+          </div>
+          <div class="skill-tile learning">
+            <div class="tile-icon-badge"><img class="tile-icon" src="icons/numpy-original.svg" alt="NumPy / Pandas" loading="lazy"></div>
+            <span class="tile-name">NumPy / Pandas</span>
+            <div class="tile-tip"><strong>NumPy / Pandas</strong><span class="tt-level learning-tag">Learning</span><p>Data wrangling and numerical computing basics.</p></div>
+          </div>
+          <div class="skill-tile learning">
+            <div class="tile-icon-badge"><i class="fas fa-diagram-project tile-icon-fa"></i></div>
+            <span class="tile-name">Machine Learning</span>
+            <div class="tile-tip"><strong>Machine Learning</strong><span class="tt-level learning-tag">Learning</span><p>Core ML concepts — regression, classification, model evaluation.</p></div>
+          </div>
+          <div class="skill-tile learning">
+            <div class="tile-icon-badge"><i class="fas fa-robot tile-icon-fa"></i></div>
+            <span class="tile-name">LLMs & Prompt Eng.</span>
+            <div class="tile-tip"><strong>LLMs & Prompt Engineering</strong><span class="tt-level learning-tag">Planned</span><p>Next up on the roadmap — see the journey below.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DSA -->
+      <div class="skill-card" data-delay="700">
+        <div class="skill-card-header">
+          <i class="fas fa-sitemap skill-card-icon"></i>
+          <h3>DSA & CS Fundamentals</h3>
+        </div>
+        <div class="skill-pills">
+          <span class="pill">Arrays</span><span class="pill">Strings</span>
+          <span class="pill">HashMaps</span><span class="pill">Linked Lists</span>
+          <span class="pill">Trees</span><span class="pill">Graphs (DFS/BFS)</span>
+          <span class="pill">OOP</span><span class="pill">DBMS</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= AI LEARNING JOURNEY ======= -->
+<section class="ai-journey section" id="ai-journey">
+  <div class="ai-journey-bg"></div>
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">03 / Growth</span>
+      <h2 class="section-title">Full-Stack → AI Engineer</h2>
+      <p class="section-sub">The path I'm actively building toward, one stage at a time.</p>
+    </div>
+    <div class="roadmap" id="roadmap">
+      <div class="roadmap-track"></div>
+      <div class="roadmap-progress" id="roadmapProgress"></div>
+
+      <div class="road-stage done"><div class="road-dot"><i class="fab fa-java"></i></div><div class="road-card"><span class="road-status">Completed</span><h4>Java</h4><p>Core language & OOP foundations.</p></div></div>
+      <div class="road-stage done"><div class="road-dot"><i class="fas fa-leaf"></i></div><div class="road-card"><span class="road-status">Completed</span><h4>Java Full-Stack</h4><p>Spring Boot + React — 3 shipped projects.</p></div></div>
+      <div class="road-stage active"><div class="road-dot"><i class="fab fa-python"></i></div><div class="road-card"><span class="road-status">In Progress</span><h4>Python</h4><p>Syntax, scripting, and tooling for data & ML.</p></div></div>
+      <div class="road-stage active"><div class="road-dot"><i class="fas fa-table"></i></div><div class="road-card"><span class="road-status">In Progress</span><h4>NumPy · Pandas</h4><p>Data manipulation and numerical computing.</p></div></div>
+      <div class="road-stage next"><div class="road-dot"><i class="fas fa-chart-line"></i></div><div class="road-card"><span class="road-status">Next</span><h4>Machine Learning</h4><p>Regression, classification, model evaluation.</p></div></div>
+      <div class="road-stage planned"><div class="road-dot"><i class="fas fa-network-wired"></i></div><div class="road-card"><span class="road-status">Planned</span><h4>Deep Learning</h4><p>Neural networks, backprop, optimization.</p></div></div>
+      <div class="road-stage planned"><div class="road-dot"><i class="fas fa-fire"></i></div><div class="road-card"><span class="road-status">Planned</span><h4>PyTorch</h4><p>Building and training models hands-on.</p></div></div>
+      <div class="road-stage planned"><div class="road-dot"><i class="fas fa-layer-group"></i></div><div class="road-card"><span class="road-status">Planned</span><h4>Transformers</h4><p>Attention mechanisms & modern architectures.</p></div></div>
+      <div class="road-stage planned"><div class="road-dot"><i class="fas fa-comments"></i></div><div class="road-card"><span class="road-status">Planned</span><h4>LLMs</h4><p>Working with large language models.</p></div></div>
+      <div class="road-stage planned"><div class="road-dot"><i class="fas fa-terminal"></i></div><div class="road-card"><span class="road-status">Planned</span><h4>Prompt Engineering</h4><p>Designing reliable, structured prompts.</p></div></div>
+      <div class="road-stage planned"><div class="road-dot"><i class="fas fa-magnifying-glass"></i></div><div class="road-card"><span class="road-status">Planned</span><h4>RAG</h4><p>Retrieval-augmented generation pipelines.</p></div></div>
+      <div class="road-stage planned"><div class="road-dot"><i class="fas fa-link"></i></div><div class="road-card"><span class="road-status">Planned</span><h4>LangChain</h4><p>Chaining LLM calls into real workflows.</p></div></div>
+      <div class="road-stage planned"><div class="road-dot"><i class="fas fa-diagram-project"></i></div><div class="road-card"><span class="road-status">Planned</span><h4>LangGraph</h4><p>Stateful, graph-based agent orchestration.</p></div></div>
+      <div class="road-stage planned"><div class="road-dot"><i class="fas fa-robot"></i></div><div class="road-card"><span class="road-status">Planned</span><h4>AI Agents</h4><p>Autonomous, tool-using agent systems.</p></div></div>
+      <div class="road-stage planned"><div class="road-dot"><i class="fas fa-plug-circle-bolt"></i></div><div class="road-card"><span class="road-status">Planned</span><h4>MCP</h4><p>Standardized model-context tool integration.</p></div></div>
+      <div class="road-stage planned"><div class="road-dot"><i class="fas fa-bolt"></i></div><div class="road-card"><span class="road-status">Planned</span><h4>FastAPI</h4><p>Serving AI systems in production.</p></div></div>
+      <div class="road-stage planned final"><div class="road-dot"><i class="fas fa-flag-checkered"></i></div><div class="road-card"><span class="road-status">Goal</span><h4>Production AI Systems</h4><p>End-to-end, deployed, real-world AI products.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= PROJECTS ======= -->
+<section class="projects section" id="projects">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">04 / Projects</span>
+      <h2 class="section-title">What I've Built</h2>
+    </div>
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card featured">
+        <div class="project-number">01</div>
+        <div class="project-card-inner">
+          <div class="project-tags">
+            <span class="ptag">Full-Stack</span>
+            <span class="ptag featured-tag">Featured</span>
+          </div>
+          <h3 class="project-title">Medicine Availability Finder</h3>
+          <p class="project-desc">
+            A location-based web app that helps users find nearby pharmacies with required medicines in stock. Features geolocation-based search, real-time stock updates, and a dedicated store owner dashboard for inventory management.
+          </p>
+          <div class="project-stack">
+            <span>Java</span><span>Spring Boot</span><span>React.js</span>
+            <span>MongoDB</span><span>JWT</span><span>REST APIs</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/vashistathallapally476cmd" target="_blank" class="plink">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="#" class="plink plink-live">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+          </div>
+        </div>
+        <div class="project-glow"></div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div class="project-number">02</div>
+        <div class="project-card-inner">
+          <div class="project-tags">
+            <span class="ptag">Full-Stack</span>
+            <span class="ptag">AI / Algorithm</span>
+          </div>
+          <h3 class="project-title">SmartBudget — Product Recommender</h3>
+          <p class="project-desc">
+            An intelligent product recommendation platform that suggests best-value items within a user's budget using a custom scoring algorithm combining Trust Score, Value Score, and Final Score. Features wishlist, product comparison, and smart filtering.
+          </p>
+          <div class="project-stack">
+            <span>Java</span><span>Spring Boot</span><span>HTML/CSS/JS</span>
+            <span>REST APIs</span><span>Ranking Algorithm</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/vashistathallapally476cmd" target="_blank" class="plink">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+        <div class="project-glow"></div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <div class="project-number">03</div>
+        <div class="project-card-inner">
+          <div class="project-tags">
+            <span class="ptag">Full-Stack</span>
+            <span class="ptag">FinTech</span>
+          </div>
+          <h3 class="project-title">Online Trading & Stock Rating System</h3>
+          <p class="project-desc">
+            A full-stack trading simulation platform supporting buy/sell operations, portfolio tracking, and transaction history. Built a rule-based stock rating algorithm (1–5 scale) evaluating 25+ stocks using price movement, volume trends, and market conditions.
+          </p>
+          <div class="project-stack">
+            <span>Java</span><span>React.js</span><span>Hibernate</span>
+            <span>PostgreSQL</span><span>REST APIs</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/vashistathallapally476cmd" target="_blank" class="plink">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+        <div class="project-glow"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======= CODING PROFILES ======= -->
+<section class="profiles section" id="profiles">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">05 / Profiles</span>
+      <h2 class="section-title">Coding Arena</h2>
+    </div>
+    <div class="profiles-grid">
+      <a href="https://leetcode.com/u/vashistathallapally476/" target="_blank" class="profile-card lc">
+        <div class="profile-icon-wrap">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode" class="profile-logo lc-logo"/>
+        </div>
+        <div class="profile-info">
+          <h4>LeetCode</h4>
+          <div class="profile-stats">
+            <div><span class="pstat-num">178+</span><span class="pstat-label">Problems</span></div>
+            <div><span class="pstat-num">1422</span><span class="pstat-label">Rating</span></div>
+          </div>
+        </div>
+        <i class="fas fa-arrow-up-right-from-square profile-arrow"></i>
+      </a>
+
+      <a href="https://www.codechef.com/users/vashistat" target="_blank" class="profile-card cc">
+        <div class="profile-icon-wrap">
+          <div class="profile-emoji">👨‍🍳</div>
+        </div>
+        <div class="profile-info">
+          <h4>CodeChef</h4>
+          <div class="profile-stats">
+            <div><span class="pstat-num">60+</span><span class="pstat-label">Problems</span></div>
+            <div><span class="pstat-num">1202</span><span class="pstat-label">Rating</span></div>
+          </div>
+        </div>
+        <i class="fas fa-arrow-up-right-from-square profile-arrow"></i>
+      </a>
+
+      <a href="https://github.com/vashistathallapally476cmd" target="_blank" class="profile-card gh">
+        <div class="profile-icon-wrap">
+          <i class="fab fa-github profile-gi"></i>
+        </div>
+        <div class="profile-info">
+          <h4>GitHub</h4>
+          <div class="profile-stats">
+            <div><span class="pstat-num">3+</span><span class="pstat-label">Projects</span></div>
+            <div><span class="pstat-num">Active</span><span class="pstat-label">Status</span></div>
+          </div>
+        </div>
+        <i class="fas fa-arrow-up-right-from-square profile-arrow"></i>
+      </a>
+
+      <a href="mailto:vashistathallapally476@gmail.com" class="profile-card em">
+        <div class="profile-icon-wrap">
+          <i class="fas fa-envelope profile-gi"></i>
+        </div>
+        <div class="profile-info">
+          <h4>Email</h4>
+          <div class="profile-stats">
+            <div><span class="pstat-num">Open</span><span class="pstat-label">To Work</span></div>
+          </div>
+        </div>
+        <i class="fas fa-arrow-up-right-from-square profile-arrow"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ======= ACHIEVEMENTS ======= -->
+<section class="achievements section" id="achievements">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">06 / Achievements</span>
+      <h2 class="section-title">Milestones</h2>
+    </div>
+    <div class="ach-grid">
+      <div class="ach-card">
+        <div class="ach-icon"><i class="fas fa-trophy"></i></div>
+        <h4>9.32 CGPA</h4>
+        <p>Consistently ranked among the top students in B.Tech CSE at GRIET</p>
+      </div>
+      <div class="ach-card">
+        <div class="ach-icon"><i class="fas fa-code"></i></div>
+        <h4>178+ LeetCode Problems</h4>
+        <p>Solved 178+ problems with a rating of 1422 covering arrays, graphs, trees and DP</p>
+      </div>
+      <div class="ach-card">
+        <div class="ach-icon"><i class="fas fa-fire"></i></div>
+        <h4>CodeChef 1202 Rating</h4>
+        <p>Solved 60+ competitive programming problems across multiple contest rounds</p>
+      </div>
+      <div class="ach-card">
+        <div class="ach-icon"><i class="fas fa-project-diagram"></i></div>
+        <h4>3 Full-Stack Projects</h4>
+        <p>Built real-world applications with Spring Boot, React.js, PostgreSQL and MongoDB</p>
+      </div>
+      <div class="ach-card">
+        <div class="ach-icon"><i class="fas fa-star"></i></div>
+        <h4>10 GPA — Schooling</h4>
+        <p>Perfect score in SSC from Holy Cross High School — foundation of academic excellence</p>
+      </div>
+      <div class="ach-card">
+        <div class="ach-icon"><i class="fas fa-chart-line"></i></div>
+        <h4>95.1% — Intermediate</h4>
+        <p>Outstanding performance in MPC at Sri Chaitanya Junior College</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= CONTACT ======= -->
+<section class="contact section" id="contact">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">07 / Contact</span>
+      <h2 class="section-title">Let's Connect</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p class="contact-lead">
+          I'm actively looking for <strong>software development internships</strong>. If you have an opportunity or just want to say hi — my inbox is always open!
+        </p>
+        <div class="contact-items">
+          <a href="mailto:vashistathallapally476@gmail.com" class="contact-item">
+            <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <span class="ci-label">Email</span>
+              <span class="ci-val">vashistathallapally476@gmail.com</span>
+            </div>
+          </a>
+          <a href="tel:7396196823" class="contact-item">
+            <div class="ci-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <span class="ci-label">Phone</span>
+              <span class="ci-val">+91 7396196823</span>
+            </div>
+          </a>
+          <div class="contact-item">
+            <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <span class="ci-label">Location</span>
+              <span class="ci-val">Hyderabad, India</span>
+            </div>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/vashistathallapally476cmd" target="_blank" class="social-btn" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://leetcode.com/u/vashistathallapally476/" target="_blank" class="social-btn" aria-label="LeetCode">
+            <i class="fas fa-code"></i>
+          </a>
+          <a href="mailto:vashistathallapally476@gmail.com" class="social-btn" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+        <a href="Resume_Thallapally_Vashista.pdf" download class="btn btn-primary resume-btn magnetic">
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+      </div>
+      <div class="contact-form-wrap">
+        <form class="contact-form" id="contactForm">
+          <input type="hidden" name="_subject" value="New message from portfolio site" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required/>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required/>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about the opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary magnetic">
+            <span>Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.
+          </div>
+          <div class="form-error" id="formError" style="display:none; color:#e5484d; font-size:0.85rem; margin-top:0.6rem;">
+            <i class="fas fa-triangle-exclamation"></i> Something went wrong — please email me directly instead.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= FOOTER ======= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">&lt;VT/&gt;</div>
+      <p class="footer-copy">
+        Designed & Built by <strong>Thallapally Vashista</strong> © 2025
+      </p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
